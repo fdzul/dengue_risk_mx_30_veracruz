@@ -993,7 +993,7 @@ loc <- rgeomex::extract_locality(cve_edo = "30",
                                  locality = "Xalapa de Ordonez")
 
 # Step 2. Extract the hotspots ####
-hotspots <- hotspotsdata::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc, ]
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
@@ -1539,7 +1539,7 @@ loc <- rgeomex::extract_locality(cve_edo = "30",
                                               "Bocal del Rio"))
 
 # Step 2. Extract the hotspots ####
-hotspots <- hotspotsdata::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc, ]
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
